@@ -12,15 +12,15 @@ func Average(xs []float64) float64 {
 }
 
 // Min function takes a slice of floats, sorts them, and returns the lowest value
-func Min(xs []float64) float64 {
-	sort.Float64s(xs)
+func Min(xs []int) int {
+	sort.Ints(xs)
 	lowest := xs[0]
-	return float64(lowest)
+	return int(lowest)
 }
 
 // Max function takes a slice of floats, sorts them, and returns the highest value
-func Max(xs []float64) float64 {
-	sort.Float64s(xs)
+func Max(xs []int) int {
+	sort.Ints(xs)
 	highest := xs[(len(xs) - 1)]
-	return float64(highest)
+	return int(highest)
 }
